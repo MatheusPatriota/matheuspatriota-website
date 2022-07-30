@@ -12,9 +12,10 @@ import LogoWhite from "../../assets/matheus_logo_white.svg";
 import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
 import Brazil from "../../assets/brazil.png";
 import USA from "../../assets/usa.png";
+import { useNavigate } from "react-router-dom";
 export function NavBar() {
   const { colorMode, toggleColorMode } = useColorMode();
-
+  const navigate = useNavigate();
   return (
     <Box
       width={"100vw"}
@@ -31,18 +32,28 @@ export function NavBar() {
           src={useColorModeValue(LogoDark, LogoWhite)}
           alt="Logo Matheus Patriota"
           w={"200px"}
+          cursor="pointer"
+          onClick={() => {
+            navigate("/");
+          }}
         />
       </Box>
-      <Box display="flex" gap={5} fontWeight="100" textTransform={"uppercase"} height={"40px"} alignItems={"center"}>
+      <Box
+        display="flex"
+        gap={5}
+        fontWeight={"bold"}
+        textTransform={"uppercase"}
+        height={"40px"}
+        alignItems={"center"}
+      >
         <Link
           href="#"
-          
           _hover={{
             paddingBottom: "3px",
             borderBottom: `2px solid ${useColorModeValue("#000", "#fff")}`,
           }}
         >
-          Home
+          Sobre
         </Link>
         <Link href="#">Experiência</Link>
         <Link href="#">Projetos</Link>

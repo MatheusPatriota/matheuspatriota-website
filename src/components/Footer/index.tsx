@@ -6,8 +6,37 @@ import {
   AiFillLinkedin,
   AiFillYoutube,
 } from "react-icons/ai";
+import "./style.scss";
+
+interface FooterLinkProps {
+  name: string;
+  url: string;
+  icon: any;
+}
 
 export function Footer() {
+  const footerLinks: FooterLinkProps[] = [
+    {
+      name: "Instagram",
+      icon: AiFillInstagram,
+      url: "https://instagram.com/matheusscpatriota",
+    },
+    {
+      name: "YouTube",
+      icon: AiFillYoutube,
+      url: "https://www.youtube.com/channel/UCSAg9UO1FluaOwOyvRg2Xuw",
+    },
+    {
+      name: "LinkedIn",
+      icon: AiFillLinkedin,
+      url: "https://www.linkedin.com/in/matheus-patriota/",
+    },
+    {
+      name: "Github",
+      icon: AiFillGithub,
+      url: "https://github.com/MatheusPatriota",
+    },
+  ];
   return (
     <Box
       display={"flex"}
@@ -16,50 +45,20 @@ export function Footer() {
       justifyContent="center"
       alignItems={"center"}
     >
-      <Link
-        href="https://instagram.com/matheusscpatriota"
-        display={"flex"}
-        flexDirection="row"
-        gap={2}
-        justifyContent="center"
-        alignItems={"center"}
-      >
-        <AiFillInstagram />
-        Instagram
-      </Link>
-      <Link
-        href="https://www.youtube.com/channel/UCSAg9UO1FluaOwOyvRg2Xuw"
-        display={"flex"}
-        flexDirection="row"
-        gap={2}
-        justifyContent="center"
-        alignItems={"center"}
-      >
-        <AiFillYoutube />
-        Youtube
-      </Link>
-      <Link
-        href="https://www.linkedin.com/in/matheus-patriota/"
-        display={"flex"}
-        flexDirection="row"
-        gap={2}
-        justifyContent="center"
-        alignItems={"center"}
-      >
-        <AiFillLinkedin />
-        LinkedIn
-      </Link>
-      <Link
-        href="https://github.com/MatheusPatriota"
-        display={"flex"}
-        flexDirection="row"
-        gap={2}
-        justifyContent="center"
-        alignItems={"center"}
-      >
-        <AiFillGithub />
-        GitHub
-      </Link>
+      {footerLinks &&
+        footerLinks.map((link, index: any) => (
+          <Link
+            href={link.url}
+            display={"flex"}
+            flexDirection="row"
+            gap={2}
+            justifyContent="center"
+            alignItems={"center"}
+          >
+            {<link.icon />}
+            {link.name}
+          </Link>
+        ))}
     </Box>
   );
 }

@@ -37,6 +37,8 @@ export function Home() {
                 href="https://kunumi.com"
                 color={"green.300"}
                 textDecoration={"underline"}
+                fontFamily={"Fira Code, monospace;"}
+                fontWeight={"500"}
               >
                 Kunumi
               </Link>
