@@ -18,7 +18,7 @@ export function NavBar() {
   return (
     <Box
       width={"100vw"}
-      height={"50px"}
+      height={"100%"}
       p={8}
       display="flex"
       flexDirection={"row"}
