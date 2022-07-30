@@ -1,7 +1,8 @@
 import { Box, Img, Link, Text } from "@chakra-ui/react";
 import React from "react";
 import { NavBar } from "../../components/NavBar";
-import Matheus from '../../assets/matheus.jpg';
+import Matheus from "../../assets/matheus.jpg";
+import { Footer } from "../../components/Footer";
 export function Home() {
   return (
     <>
@@ -21,19 +22,30 @@ export function Home() {
             justifyContent="center"
             alignItems={"center"}
           >
-            <Img src={Matheus} alt={"Imagem de Matheus Patriota"} width={"150px"} borderRadius={"20px"}/>
+            <Img
+              src={Matheus}
+              alt={"Imagem de Matheus Patriota"}
+              width={"150px"}
+              borderRadius={"20px"}
+            />
             <Text fontSize={"60px"} fontWeight={"700"}>
               Matheus Patriota
             </Text>
             <Text fontSize={"20px"} fontWeight={"400"} fontStyle={"italic"}>
               Engenheiro de Software na{" "}
-              <Link href="https://kunumi.com" color={"green.300"} textDecoration={"underline"}>Kunumi</Link>
+              <Link
+                href="https://kunumi.com"
+                color={"green.300"}
+                textDecoration={"underline"}
+              >
+                Kunumi
+              </Link>
             </Text>
           </Box>
         </Box>
       </main>
-      <footer>
-
+      <footer style={{ height: "10%" }}>
+        <Footer />
       </footer>
     </>
   );
