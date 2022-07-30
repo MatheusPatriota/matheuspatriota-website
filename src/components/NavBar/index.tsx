@@ -13,9 +13,31 @@ import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
 import Brazil from "../../assets/brazil.png";
 import USA from "../../assets/usa.png";
 import { useNavigate } from "react-router-dom";
+
+interface NavigationItemsProps {
+  name: string;
+  route: string;
+}
+
 export function NavBar() {
   const { colorMode, toggleColorMode } = useColorMode();
   const navigate = useNavigate();
+
+  const navigationsItems: NavigationItemsProps[] = [
+    {
+      name: "Sobre",
+      route: "/about",
+    },
+    {
+      name: "Experiências",
+      route: "/job-experience",
+    },
+    {
+      name: "Projetos",
+      route: "/projects",
+    },
+  ];
+  
   return (
     <Box
       width={"100vw"}
@@ -46,18 +68,18 @@ export function NavBar() {
         height={"40px"}
         alignItems={"center"}
       >
-        <Link
-          href="#"
-          _hover={{
-            paddingBottom: "3px",
-            borderBottom: `2px solid ${useColorModeValue("#000", "#fff")}`,
-          }}
-        >
-          Sobre
-        </Link>
-        <Link href="#">Experiência</Link>
-        <Link href="#">Projetos</Link>
-        {/* <Link href="#">Home</Link> */}
+        {navigationsItems.map((navItem, index) => (
+          <Link
+            key={index}
+            href={navItem.route}
+            _hover={{
+              paddingBottom: "3px",
+              borderBottom: `2px solid ${useColorModeValue("#000", "#fff")}`,
+            }}
+          >
+            {navItem.name}
+          </Link>
+        ))}
       </Box>
       <Box display={"flex"} gap={2} alignItems="center">
         <Button
