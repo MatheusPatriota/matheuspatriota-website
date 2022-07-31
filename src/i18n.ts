@@ -25,7 +25,7 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng:localStorage.getItem("language") as string, //default language
+    lng:(localStorage.getItem("language") as string)|| "ptbr", //default language
     keySeparator: false,
     interpolation: {
       escapeValue: false,
