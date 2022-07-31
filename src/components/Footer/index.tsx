@@ -41,6 +41,7 @@ export function Footer() {
     <Box
       display={"flex"}
       flexDirection="row"
+      height={"100%"}
       gap={8}
       justifyContent="center"
       alignItems={"center"}

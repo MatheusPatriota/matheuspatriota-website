@@ -12,8 +12,9 @@ export function About() {
         <Box>
           <Text
             fontSize={"62px"}
-            fontWeight="900"
-            fontFamily={"Rubik, sans-serif"}
+            fontWeight="700"
+            textTransform={"uppercase"}
+            fontFamily={"Fira Code, sans-serif"}
           >
             {t("aboutTitle") as string}
           </Text>

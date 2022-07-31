@@ -8,7 +8,7 @@ const theme = extendTheme({
         height: "100vh",
       },
       "*": {
-        fontFamily: "Rubik, sans-serif",
+        fontFamily: "Fira Code, sans-serif",
       },
     },
   },
