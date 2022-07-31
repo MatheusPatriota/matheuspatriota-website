@@ -4,20 +4,13 @@ import { NavBar } from "../../components/NavBar";
 import Matheus from "../../assets/matheus.jpg";
 import { Footer } from "../../components/Footer";
 import { useTranslation } from "react-i18next";
+import { PageStructure } from "../../components/PageStructure";
 export function Home() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   return (
     <>
-      <header style={{ height: "10%" }}>
-        <NavBar />
-      </header>
-      <main style={{ height: "80%" }}>
-        <Box
-          display={"flex"}
-          justifyContent="center"
-          height={"100%"}
-          alignItems={"center"}
-        >
+      <PageStructure>
+        <Box>
           <Box
             display={"flex"}
             flexDirection={"column"}
@@ -50,10 +43,7 @@ export function Home() {
             </Text>
           </Box>
         </Box>
-      </main>
-      <footer style={{ height: "10%" }}>
-        <Footer />
-      </footer>
+      </PageStructure>
     </>
   );
 }
