@@ -26,7 +26,7 @@ export function NavBar() {
   const { i18n } = useTranslation();
 
   const [languageSelected, setLanguageSelected] = React.useState(
-    localStorage.getItem("language") || "pt-br"
+    localStorage.getItem("language") || "ptbr"
   );
 
   const navigationsItems: NavigationItemsProps[] = [
@@ -87,7 +87,9 @@ export function NavBar() {
               borderBottom: `2px solid ${useColorModeValue("#000", "#fff")}`,
             }}
           >
-            {localStorage.getItem("language") === "pt-br" ?navItem.name : navItem.enName}
+            {localStorage.getItem("language") === "ptbr"
+              ? navItem.name
+              : navItem.enName}
           </Link>
         ))}
       </Box>
@@ -110,14 +112,14 @@ export function NavBar() {
           bg={useColorModeValue("#000", "#fff")}
           title={"Português"}
           width={"45px"}
-          opacity={languageSelected === "pt-br" ? 1 : 0.5}
+          opacity={languageSelected === "ptbr" ? 1 : 0.5}
           height={"35px"}
           size={"30px"}
           _hover={{ opacity: 0.6 }}
           _active={{ opacity: 0.2 }}
           onClick={() => {
-            setLanguageSelected("pt-br");
-            localStorage.setItem("language", "pt-br");
+            setLanguageSelected("ptbr");
+            localStorage.setItem("language", "ptbr");
             i18n.changeLanguage("ptbr");
           }}
         >

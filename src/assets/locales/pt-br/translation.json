@@ -1,4 +1,7 @@
 {
   "jobtitle": "Engenheiro de Software na ",
-  "start": "Bem vindo ao sistema"
+  "start": "Bem vindo ao sistema",
+  "aboutTitle": "Sobre mim",
+  "aboutText1": "Olá Mundo, me chamo Matheus Patriota. Sou estudante do curso de Bacharelado em Engenharia de Sotware no IFPE campus Belo Jardim e atualmente trabalho como Engenheiro de Software para a Kunumi, com o foco em desenvolvimento Front-End utilizando React.js, empresa com o foco em desenvolvimento de soluções para empresas. ",
+  "aboutText2":"No meu tempo livre crio conteúdo para ajudar outras pessoas que querem seguir o caminho de tecnologia, area pela qual sou apaixonado, se precisar de ajuda ou se sentir perdido, vamos conversar, quem sabe eu não posso te ajudar também, né!? 😉"  
 }
