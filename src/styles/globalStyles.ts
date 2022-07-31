@@ -10,6 +10,9 @@ const theme = extendTheme({
       "*": {
         fontFamily: "Fira Code, sans-serif",
       },
+      "main":{
+        padding: "10px"
+      },
     },
   },
 });

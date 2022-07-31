@@ -3,5 +3,6 @@
   "start": "Welcome to the system!",
   "aboutTitle": "About me",
   "aboutText1": "Hello World, my name is Matheus Patriota. I am a student of the Bachelor's Degree in Software Engineering at the IFPE Belo Jardim campus and currently works as a Software Engineer for Kunumi, focusing on Front-End development using React.js, a company focused on developing solutions for companies. ",
-  "aboutText2":"In my free time I create content to help other people who want to follow the path of technology, an area I'm passionate about, if you need help or feel lost, let's talk, maybe I can help you too, right!? 😉"  
+  "aboutText2":"In my free time I create content to help other people who want to follow the path of technology, an area I'm passionate about, if you need help or feel lost, let's talk, maybe I can help you too, right!? 😉"  ,
+  "jobTitle": "Job Experience"
 }

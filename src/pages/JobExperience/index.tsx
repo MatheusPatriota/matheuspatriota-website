@@ -1,5 +1,6 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import React from "react";
+import { useTranslation } from "react-i18next";
 import CompanyCard from "../../components/CompanyCard";
 import { PageStructure } from "../../components/PageStructure";
 
@@ -16,6 +17,7 @@ interface CompanyProps {
 }
 
 export function JobExperience() {
+  const { t } = useTranslation();
   const jobsExperience: CompanyProps[] = [
     {
       title: "Kunumi",
@@ -94,7 +96,23 @@ export function JobExperience() {
   return (
     <>
       <PageStructure>
-        <Box display="flex" flexWrap={"wrap"} gap={10} justifyContent="center">
+        <Box
+          display="grid"
+          flexWrap={"wrap"}
+          gap={10}
+          justifyContent="center"
+          gridTemplateColumns={"1fr 1fr 1fr"}
+        >
+          <Text
+            gridColumn={"1/-1"}
+            justifyContent="center"
+            display={"flex"}
+            fontSize={"30px"}
+            fontWeight={"700"}
+            textTransform={"uppercase"}
+          >
+            {t("jobTitle") as string}
+          </Text>
           {
             <>
               {jobsExperience.map((job: CompanyProps, index: any) => (

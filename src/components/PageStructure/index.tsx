@@ -8,7 +8,7 @@ interface PageStructureProps {
 }
 export function PageStructure(props: PageStructureProps) {
   return (
-    <>
+    <Box height={"100vh"}>
       <header style={{ height: "10%" }}>
         <NavBar />
       </header>
@@ -25,6 +25,6 @@ export function PageStructure(props: PageStructureProps) {
       <footer style={{ height: "10%" }}>
         <Footer />
       </footer>
-    </>
+    </Box>
   );
 }
