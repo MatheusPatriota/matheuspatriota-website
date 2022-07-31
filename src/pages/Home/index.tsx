@@ -3,7 +3,9 @@ import React from "react";
 import { NavBar } from "../../components/NavBar";
 import Matheus from "../../assets/matheus.jpg";
 import { Footer } from "../../components/Footer";
+import { useTranslation } from "react-i18next";
 export function Home() {
+  const { t, i18n } = useTranslation();
   return (
     <>
       <header style={{ height: "10%" }}>
@@ -32,13 +34,16 @@ export function Home() {
               Matheus Patriota
             </Text>
             <Text fontSize={"20px"} fontWeight={"400"} fontStyle={"italic"}>
-              Engenheiro de Software na{" "}
+              {t("jobtitle") as string}
               <Link
                 href="https://kunumi.com"
-                color={"green.300"}
+                color={"blue.300"}
                 textDecoration={"underline"}
                 fontFamily={"Fira Code, monospace;"}
                 fontWeight={"500"}
+                _hover={{
+                  color: "blue.700",
+                }}
               >
                 Kunumi
               </Link>

@@ -54,6 +54,9 @@ export function Footer() {
             gap={2}
             justifyContent="center"
             alignItems={"center"}
+            _hover={{
+              color: "blue.400",
+            }}
           >
             {<link.icon />}
             {link.name}
