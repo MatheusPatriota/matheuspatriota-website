@@ -37,6 +37,7 @@ export function Home() {
                 _hover={{
                   color: "blue.700",
                 }}
+                target={"_blank"}
               >
                 Kunumi
               </Link>

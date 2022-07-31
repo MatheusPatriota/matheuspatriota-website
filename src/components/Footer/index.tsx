@@ -57,6 +57,8 @@ export function Footer() {
             _hover={{
               color: "blue.400",
             }}
+            target={"_blank"}
+            key={index}
           >
             {<link.icon />}
             {link.name}
