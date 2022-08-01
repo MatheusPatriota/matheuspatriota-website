@@ -3,6 +3,7 @@ import { About } from "./pages/About";
 import { Home } from "./pages/Home";
 import React from "react";
 import { JobExperience } from "./pages/JobExperience";
+import { Projects } from "./pages/Projects";
 
 function App() {
   React.useEffect(() => {
@@ -15,6 +16,7 @@ function App() {
       <Route index element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/job-experience" element={<JobExperience />} />
+      <Route path="/projects" element={<Projects />} />
     </Routes>
   );
 }
