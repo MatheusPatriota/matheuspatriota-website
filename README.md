@@ -52,12 +52,12 @@ This application uses the following technologies:
 
 - [Vite](https://vitejs.dev/) (Development Environment)
 - [TypeScript](https://www.typescriptlang.org/)
-- [Chakra UI](https://chakra-ui.com/) (CSS with superpowers)
+- [Chakra UI](https://chakra-ui.com/) (Component Library)
 - [React](https://reactjs.org/)
 - [React Router](https://reactrouter.com/web/guides/quick-start) (Routing)
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [Axios](https://axios-http.com/ptbr/) (Data Fetching)
-
+- [GitHub GraphQL API](https://docs.github.com/en/graphql/overview/about-the-graphql-api) 
 ---
 
 <p align="center">
