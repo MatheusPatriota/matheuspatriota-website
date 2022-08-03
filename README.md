@@ -21,7 +21,8 @@
 
 <!-- Project Design -->
 
-
+<img alt="Fim" src="https://github.com/MatheusPatriota/matheuspatriota-website/blob/main/src/assets/inicio.gif" />
+<img alt="Incio" src="https://github.com/MatheusPatriota/matheuspatriota-website/blob/main/src/assets/end.gif" />
 
 <!-- Summary -->
 
